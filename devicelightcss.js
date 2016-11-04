@@ -6,7 +6,7 @@ var state = {
 
 window.addEventListener('devicelight', function(e) {
 	//event.value is the lux value returned by the sensor on the device
-	(e.value < threshold) ? swapSheet() : swapSheet();
+	if (e.value < threshold) swapSheet()
 });
 
 // @TODO need to get current filepath of stylesheets

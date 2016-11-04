@@ -6,7 +6,7 @@ var state = {
 
 window.addEventListener('devicelight', function(e) {
 	//event.value is the lux value returned by the sensor on the device
-	if (e.value < threshold) swapSheet()
+	if (e.value < threshold) swapSheet() // this is broek asf. need to fix logic with light/dark
 });
 
 // @TODO need to get current filepath of stylesheets
